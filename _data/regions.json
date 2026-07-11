@@ -1,0 +1,19 @@
+[
+  {
+    "sido": "서울특별시",
+    "slug": "seoul",
+    "sigungu": [
+      { "name": "강남구", "slug": "seoul-01", "count": 5 },
+      { "name": "서초구", "slug": "seoul-02", "count": 3 },
+      { "name": "마포구", "slug": "seoul-03", "count": 2 }
+    ]
+  },
+  {
+    "sido": "경기도",
+    "slug": "gyeonggi",
+    "sigungu": [
+      { "name": "성남시", "slug": "gyeonggi-01", "count": 4 },
+      { "name": "수원시", "slug": "gyeonggi-02", "count": 3 }
+    ]
+  }
+]

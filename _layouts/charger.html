@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<div class="charger-page">
+
+  <nav class="breadcrumb">
+    <a href="/">홈</a>
+    <span>›</span>
+    <a href="/region/{{ page.sido_slug }}/">{{ page.sido }}</a>
+    <span>›</span>
+    <a href="/region/{{ page.sido_slug }}/{{ page.sigungu_slug }}/">{{ page.sigungu }}</a>
+    <span>›</span>
+    <span>{{ page.station_name }}</span>
+  </nav>
+
+  <div class="charger-header">
+    <div class="charger-badges">
+      {% if page.parking_free %}<span class="tag tag-free">무료주차</span>{% endif %}
+      <span class="tag tag-restrict">{% if page.restricted %}이용제한{% else %}개방형{% endif %}</span>
+    </div>
+    <h1>{{ page.station_name }}</h1>
+    <p class="charger-addr">📍 {{ page.address }}{% if page.floor != "" %} · {{ page.floor }}{% endif %}</p>
+    {% if page.operator != "" %}
+    <p class="charger-operator">운영기관: {{ page.operator }}{% if page.tel != "" %} · <a href="tel:{{ page.tel }}">{{ page.tel }}</a>{% endif %}</p>
+    {% endif %}
+    {% if page.hours != "" %}
+    <p class="charger-hours">⏰ 이용가능시간: {{ page.hours }}</p>
+    {% endif %}
+  </div>
+
+  <!-- 광고 -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 충전기 목록 -->
+  <div class="charger-detail-section">
+    <h2>⚡ 충전기 현황 ({{ page.chargers.size }}대)</h2>
+    <div class="charger-unit-list">
+      {% for u in page.chargers %}
+      <div class="charger-unit">
+        <span class="unit-type tag {% if u.speed == '급속' %}tag-fast{% else %}tag-slow{% endif %}">{{ u.speed }} {{ u.capacity }}kW</span>
+        <span class="unit-status status-{{ u.status_class }}">{{ u.status_text }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="charger-updated">마지막 갱신: {{ page.last_updated }}</p>
+  </div>
+
+  <!-- 지도 -->
+  <div class="charger-detail-section">
+    <h2>🗺️ 위치</h2>
+    <a href="https://map.kakao.com/link/to/{{ page.station_name | url_encode }},{{ page.lat }},{{ page.lon }}" target="_blank" rel="noopener" class="btn-navi">길찾기 →</a>
+  </div>
+
+  <div class="wooa-orig-anchor"></div>
+
+  <div class="tips-panel">
+    <h3>💡 Tips</h3>
+    <ul>
+      <li>충전 전 커넥터 타입(DC콤보/AC3상/DC차데모)이 내 차량과 맞는지 먼저 확인하세요.</li>
+      <li>급속충전기는 완속보다 빠르지만 배터리 80% 이후엔 충전 속도가 느려지니 참고하세요.</li>
+      <li>실시간 상태는 참고용이며, 방문 전 전화로 재확인하는 것이 가장 정확합니다.</li>
+    </ul>
+  </div>
+  <div class="faq-section">
+    <h2>자주 묻는 질문</h2>
+    <details>
+      <summary>이 충전소는 아무나 이용할 수 있나요?</summary>
+      <p>{% if page.restricted %}이 충전소는 이용 제한이 있어 사전 확인이 필요합니다.{% else %}개방형 충전소로 누구나 이용 가능합니다.{% endif %} 방문 전 운영기관에 문의하시면 정확합니다.</p>
+    </details>
+    <details>
+      <summary>충전기가 고장났으면 어떻게 신고하나요?</summary>
+      <p>충전기 고장은 운영기관 연락처로 신고하거나, 환경부 무공해차 통합누리집(ev.or.kr)의 고장 신고 메뉴를 이용할 수 있습니다.</p>
+    </details>
+    <details>
+      <summary>실시간 상태 정보가 실제와 다를 수 있나요?</summary>
+      <p>네. 통신 지연이나 오류로 실제 상태와 차이가 있을 수 있으므로, 참고용으로만 활용하고 현장에서 다시 확인하시기 바랍니다.</p>
+    </details>
+  </div>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ElectricVehicleChargingStation",
+    "name": "{{ page.station_name }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ page.address }}",
+      "addressRegion": "{{ page.sido }}",
+      "addressLocality": "{{ page.sigungu }}",
+      "addressCountry": "KR"
+    }
+    {% if page.lat != "" and page.lon != "" %},
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ page.lat }},
+      "longitude": {{ page.lon }}
+    }
+    {% endif %}
+  }
+  </script>
+
+</div>

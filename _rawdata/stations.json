@@ -1,0 +1,565 @@
+[
+  {
+    "id": 1,
+    "slug": "station-001",
+    "name": "강남구 이마트 충전소",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "address": "서울특별시 강남구 어딘가로 13",
+    "floor": "지하 2층",
+    "operator": "환경부",
+    "tel": "1588-4657",
+    "hours": "06:00~24:00",
+    "parking_free": false,
+    "restricted": false,
+    "lat": 37.58011,
+    "lon": 127.005148,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 2,
+    "slug": "station-002",
+    "name": "강남구 시청 충전소",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "address": "서울특별시 강남구 어딘가로 259",
+    "floor": "",
+    "operator": "한국전력공사",
+    "tel": "1588-4257",
+    "hours": "24시간",
+    "parking_free": true,
+    "restricted": false,
+    "lat": 37.551263,
+    "lon": 126.911457,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 3,
+    "slug": "station-003",
+    "name": "강남구 주민센터 충전소",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "address": "서울특별시 강남구 어딘가로 80",
+    "floor": "지하 1층",
+    "operator": "차지비",
+    "tel": "1588-2674",
+    "hours": "06:00~24:00",
+    "parking_free": false,
+    "restricted": true,
+    "lat": 37.597618,
+    "lon": 127.070138,
+    "chargers": [
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 4,
+    "slug": "station-004",
+    "name": "강남구 시청 충전소",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "address": "서울특별시 강남구 어딘가로 36",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1588-5741",
+    "hours": "24시간",
+    "parking_free": true,
+    "restricted": true,
+    "lat": 37.530538,
+    "lon": 126.964023,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 5,
+    "slug": "station-005",
+    "name": "강남구 이마트 충전소",
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "address": "서울특별시 강남구 어딘가로 88",
+    "floor": "",
+    "operator": "환경부",
+    "tel": "1588-3677",
+    "hours": "24시간",
+    "parking_free": false,
+    "restricted": true,
+    "lat": 37.622949,
+    "lon": 126.893885,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 6,
+    "slug": "station-006",
+    "name": "서초구 이마트 충전소",
+    "sido": "서울특별시",
+    "sigungu": "서초구",
+    "address": "서울특별시 서초구 어딘가로 109",
+    "floor": "",
+    "operator": "차지비",
+    "tel": "1588-4483",
+    "hours": "24시간",
+    "parking_free": false,
+    "restricted": true,
+    "lat": 37.554156,
+    "lon": 126.907464,
+    "chargers": [
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 7,
+    "slug": "station-007",
+    "name": "서초구 복합쇼핑몰 충전소",
+    "sido": "서울특별시",
+    "sigungu": "서초구",
+    "address": "서울특별시 서초구 어딘가로 186",
+    "floor": "지하 1층",
+    "operator": "환경부",
+    "tel": "1588-9348",
+    "hours": "24시간",
+    "parking_free": true,
+    "restricted": true,
+    "lat": 37.462352,
+    "lon": 126.875995,
+    "chargers": [
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 8,
+    "slug": "station-008",
+    "name": "서초구 이마트 충전소",
+    "sido": "서울특별시",
+    "sigungu": "서초구",
+    "address": "서울특별시 서초구 어딘가로 275",
+    "floor": "지하 2층",
+    "operator": "차지비",
+    "tel": "1588-2827",
+    "hours": "06:00~24:00",
+    "parking_free": false,
+    "restricted": false,
+    "lat": 37.633128,
+    "lon": 127.043904,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 9,
+    "slug": "station-009",
+    "name": "마포구 공영주차장 충전소",
+    "sido": "서울특별시",
+    "sigungu": "마포구",
+    "address": "서울특별시 마포구 어딘가로 251",
+    "floor": "지상 1층",
+    "operator": "한국전력공사",
+    "tel": "1588-6947",
+    "hours": "24시간",
+    "parking_free": true,
+    "restricted": false,
+    "lat": 37.433878,
+    "lon": 127.091403,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 10,
+    "slug": "station-010",
+    "name": "마포구 현대백화점 충전소",
+    "sido": "서울특별시",
+    "sigungu": "마포구",
+    "address": "서울특별시 마포구 어딘가로 66",
+    "floor": "지상 2층",
+    "operator": "스타코프",
+    "tel": "1588-3705",
+    "hours": "06:00~24:00",
+    "parking_free": true,
+    "restricted": false,
+    "lat": 37.480039,
+    "lon": 126.989789,
+    "chargers": [
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 11,
+    "slug": "station-011",
+    "name": "성남시 아파트단지 충전소",
+    "sido": "경기도",
+    "sigungu": "성남시",
+    "address": "경기도 성남시 어딘가로 62",
+    "floor": "지하 1층",
+    "operator": "환경부",
+    "tel": "1588-2049",
+    "hours": "24시간",
+    "parking_free": true,
+    "restricted": false,
+    "lat": 37.482565,
+    "lon": 126.849298,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 12,
+    "slug": "station-012",
+    "name": "성남시 공영주차장 충전소",
+    "sido": "경기도",
+    "sigungu": "성남시",
+    "address": "경기도 성남시 어딘가로 37",
+    "floor": "",
+    "operator": "환경부",
+    "tel": "1588-5562",
+    "hours": "24시간",
+    "parking_free": false,
+    "restricted": false,
+    "lat": 37.697154,
+    "lon": 126.999313,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 13,
+    "slug": "station-013",
+    "name": "성남시 복합쇼핑몰 충전소",
+    "sido": "경기도",
+    "sigungu": "성남시",
+    "address": "경기도 성남시 어딘가로 211",
+    "floor": "지상 2층",
+    "operator": "한국전력공사",
+    "tel": "1588-2612",
+    "hours": "06:00~24:00",
+    "parking_free": true,
+    "restricted": true,
+    "lat": 37.449281,
+    "lon": 126.885477,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 14,
+    "slug": "station-014",
+    "name": "성남시 롯데마트 충전소",
+    "sido": "경기도",
+    "sigungu": "성남시",
+    "address": "경기도 성남시 어딘가로 48",
+    "floor": "지하 1층",
+    "operator": "환경부",
+    "tel": "1588-7658",
+    "hours": "24시간",
+    "parking_free": false,
+    "restricted": false,
+    "lat": 37.434091,
+    "lon": 126.941692,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 15,
+    "slug": "station-015",
+    "name": "수원시 롯데마트 충전소",
+    "sido": "경기도",
+    "sigungu": "수원시",
+    "address": "경기도 수원시 어딘가로 297",
+    "floor": "",
+    "operator": "한국전력공사",
+    "tel": "1588-6138",
+    "hours": "06:00~24:00",
+    "parking_free": true,
+    "restricted": false,
+    "lat": 37.672316,
+    "lon": 126.87523,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "speed": "급속",
+        "capacity": 100,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "speed": "완속",
+        "capacity": 7,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 16,
+    "slug": "station-016",
+    "name": "수원시 롯데마트 충전소",
+    "sido": "경기도",
+    "sigungu": "수원시",
+    "address": "경기도 수원시 어딘가로 42",
+    "floor": "지상 2층",
+    "operator": "스타코프",
+    "tel": "1588-9565",
+    "hours": "24시간",
+    "parking_free": false,
+    "restricted": false,
+    "lat": 37.510755,
+    "lon": 126.907684,
+    "chargers": [
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  },
+  {
+    "id": 17,
+    "slug": "station-017",
+    "name": "수원시 아파트단지 충전소",
+    "sido": "경기도",
+    "sigungu": "수원시",
+    "address": "경기도 수원시 어딘가로 289",
+    "floor": "지상 1층",
+    "operator": "한국전력공사",
+    "tel": "1588-9808",
+    "hours": "06:00~24:00",
+    "parking_free": false,
+    "restricted": true,
+    "lat": 37.680759,
+    "lon": 127.091781,
+    "chargers": [
+      {
+        "speed": "급속",
+        "capacity": 50,
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "speed": "완속",
+        "capacity": 11,
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "2026-07-11 12:00"
+  }
+]

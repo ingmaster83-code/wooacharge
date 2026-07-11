@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="region-page">
+
+  <nav class="breadcrumb">
+    <a href="/">홈</a>
+    <span>›</span>
+    {% if page.sigungu %}
+    <a href="/region/{{ page.sido_slug }}/">{{ page.sido }}</a>
+    <span>›</span>
+    <span>{{ page.sigungu }}</span>
+    {% else %}
+    <span>{{ page.sido }}</span>
+    {% endif %}
+  </nav>
+
+  <div class="region-header">
+    <h1>
+      {% if page.sigungu %}
+      {{ page.sido }} {{ page.sigungu }} 전기차 충전소
+      {% else %}
+      {{ page.sido }} 전기차 충전소
+      {% endif %}
+    </h1>
+    <p class="region-count">총 <strong>{{ page.charger_count }}</strong>개 충전소</p>
+  </div>
+
+  {% unless page.sigungu %}
+  <!-- 구/군 별 바로가기 (시도 페이지에만) -->
+  <div class="sigungu-grid">
+    {% for sg in page.sigungu_list %}
+    <a href="/region/{{ page.sido_slug }}/{{ sg.slug }}/" class="sigungu-card">
+      <span class="sg-name">{{ sg.name }}</span>
+      <span class="sg-count">{{ sg.count }}개</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endunless %}
+
+  <!-- 광고 -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 충전소 목록 -->
+  <div class="charger-list">
+    {% for c in page.chargers %}
+    <a href="/charger/{{ c.slug }}/" class="charger-card">
+      <div class="charger-card-header">
+        <span class="charger-card-name">{{ c.name }}</span>
+        {% if c.parking_free %}<span class="tag tag-free">무료주차</span>{% endif %}
+      </div>
+      {% if c.address != "" %}
+      <p class="charger-card-addr">📍 {{ c.address }}{% if c.floor != "" %} · {{ c.floor }}{% endif %}</p>
+      {% endif %}
+      <div class="charger-card-types">
+        {% if c.fast_count > 0 %}<span class="tag tag-fast">급속 {{ c.fast_count }}대</span>{% endif %}
+        {% if c.slow_count > 0 %}<span class="tag tag-slow">완속 {{ c.slow_count }}대</span>{% endif %}
+        <span class="tag tag-avail">사용가능 {{ c.available_count }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+</div>

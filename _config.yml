@@ -1,0 +1,31 @@
+title: 우아차저 - 전국 전기차 충전소 검색
+description: >-
+  전국 전기차 충전소 위치와 실시간 충전기 상태(급속/완속)를 한눈에.
+  한국환경공단 전기차 충전소 정보 기반 신뢰할 수 있는 충전소 정보.
+url: "https://wooacharge.wooahouse.com"
+baseurl: ""
+lang: ko
+timezone: Asia/Seoul
+author: WooaHouse
+
+ad_mode: prod
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - manual/
+  - "*.py"
+  - README.md
+  - .gitignore
+  - .env
+  - vendor/

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="naver-site-verification" content="" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="우아차저">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- Google Fonts (Pretendard CDN) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZGENFSXWC"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9ZGENFSXWC');</script>
+
+  {% if site.ad_mode == "prod" %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
+  {% endif %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-icon">🔌</span>
+      <span>우아차저</span>
+    </a>
+    <nav class="header-nav">
+      <a href="{{ '/' | relative_url }}">홈</a>
+      <a href="{{ '/region/' | relative_url }}">지역별</a>
+    </nav>
+  </div>
+</header>
+
+<script src="{{ '/assets/js/wooa-sites-bar.js' | relative_url }}"></script>
+
+<main class="site-main">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-disclaimer">본 정보는 한국환경공단 전기차 충전소 정보를 기반으로 합니다. 실제 충전 가능 여부는 반드시 현장에서 다시 확인하세요.</p>
+    <div class="footer-links">
+      <a href="https://wooaparking.wooahouse.com" target="_blank">우아파킹</a>
+      <a href="https://wooayak.wooahouse.com" target="_blank">이약뭐야</a>
+      <a href="https://hosppass.wooahouse.com" target="_blank">병원패스</a>
+      <a href="https://wooacamp.wooahouse.com" target="_blank">우아캠프</a>
+      <a href="{{ '/privacy/' | relative_url }}">개인정보처리방침</a>
+      <a href="https://wooahouse.com" target="_blank">WooaHouse</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 WooaHouse. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
