@@ -1,3 +1,44 @@
+/* ───── Our Sites Bar ───── */
+.our-sites-bar {
+  background: #111827;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.our-sites-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 7px 20px 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.our-sites-label {
+  color: rgba(255,255,255,.6);
+  font-size: .88rem;
+  font-weight: 600;
+  letter-spacing: .3px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+}
+.our-sites-links {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+.our-sites-links a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+  font-size: .78rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+}
+.our-sites-links a:hover { background: rgba(255,255,255,.12); color: #fff; }
+.our-sites-links a.active { background: rgba(255,255,255,.18); color: #fff; }
+
 :root {
   --primary: #2563EB;
   --primary-light: #EFF6FF;
