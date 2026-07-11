@@ -101,6 +101,20 @@ a { text-decoration: none; color: inherit; }
 .sg-name { font-weight: 600; }
 .sg-count { font-size: .8rem; color: var(--text-secondary); }
 
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
+.stat-card { background: var(--bg); border-radius: var(--radius); padding: 16px 8px; text-align: center; }
+.stat-num { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: .78rem; color: var(--text-secondary); margin-top: 4px; }
+@media (max-width: 480px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.region-btn-count { font-size: .78rem; color: var(--text-secondary); margin-left: 4px; }
+
+.loading-text { color: var(--text-secondary); font-size: .9rem; padding: 12px 0; }
+
+.guide-section { background: var(--bg); border-radius: var(--radius); padding: 20px 22px; margin-top: 32px; }
+.guide-section h2 { font-size: 1.05rem; margin: 0 0 12px; }
+.guide-list { margin: 0; padding-left: 18px; font-size: .88rem; color: var(--text-secondary); line-height: 1.9; }
+
 .charger-list, .near-me-results .charger-list { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
 .charger-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: block; }
 .charger-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }

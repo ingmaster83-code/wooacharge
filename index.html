@@ -20,6 +20,26 @@ description: 전국 전기차 충전소 위치와 실시간 충전기 상태(급
 
   <div id="nearMeResults" class="near-me-results" style="display:none;"></div>
 
+  <!-- 통계 요약 -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">{{ site.data.stats.total_stations }}</div>
+      <div class="stat-label">전국 충전소</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">{{ site.data.stats.total_chargers }}</div>
+      <div class="stat-label">충전기 총 대수</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">{{ site.data.stats.fast_count }}</div>
+      <div class="stat-label">급속충전기</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">{{ site.data.stats.free_parking_count }}</div>
+      <div class="stat-label">무료주차 충전소</div>
+    </div>
+  </div>
+
   <!-- 광고 -->
   <div class="ad-wrap">
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -30,9 +50,32 @@ description: 전국 전기차 충전소 위치와 실시간 충전기 상태(급
     <h2>🗺️ 지역별로 찾기</h2>
     <div class="region-btn-grid">
       {% for region in site.data.regions %}
-      <a href="/region/{{ region.slug }}/" class="region-btn">{{ region.sido }}</a>
+      <a href="/region/{{ region.slug }}/" class="region-btn">{{ region.sido }} <span class="region-btn-count">{{ region.total }}</span></a>
       {% endfor %}
     </div>
+  </div>
+
+  <div class="home-section">
+    <h2>⚡ 최근 등록 충전소</h2>
+    <div class="charger-list" id="recentChargers">
+      <p class="loading-text">불러오는 중...</p>
+    </div>
+  </div>
+
+  <!-- 광고 2 -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="guide-section">
+    <h2>ℹ️ 이용 안내</h2>
+    <ul class="guide-list">
+      <li>⚡ <strong>급속충전기</strong>는 대부분 50kW 이상으로 30분~1시간이면 충전이 완료되고, <strong>완속충전기</strong>는 보통 3~7kW로 몇 시간 이상 걸립니다.</li>
+      <li>🕐 실시간 상태는 충전소 상세페이지를 열 때마다 그 순간의 값을 받아오지만, 통신 지연으로 실제와 다를 수 있어 방문 전 전화 확인을 권장합니다.</li>
+      <li>🅿️ 무료주차 여부는 충전소마다 다르니 카드의 "무료주차" 표시를 꼭 확인하세요.</li>
+      <li>📍 "내 위치 근처" 버튼을 누르면 브라우저 위치 권한을 허용해야 하며, 위치 정보는 서버에 저장되지 않습니다.</li>
+    </ul>
   </div>
 
 </div>

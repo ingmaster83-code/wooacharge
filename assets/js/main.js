@@ -61,6 +61,17 @@ async function init() {
       () => alert('위치 정보를 가져올 수 없습니다. 브라우저 위치 권한을 확인해주세요.')
     );
   });
+
+  renderRecentChargers();
+}
+
+function renderRecentChargers() {
+  const el = document.getElementById('recentChargers');
+  if (!el) return;
+  const sample = stations.slice(0, 8);
+  el.innerHTML = sample.length
+    ? sample.map(s => stationCard(s)).join('')
+    : '<p class="loading-text">등록된 충전소가 없습니다.</p>';
 }
 
 function showNearby(lat, lon) {
