@@ -77,21 +77,22 @@ def fetch_all(url: str, extra_params: dict = None, limit: int = 0) -> list:
 
         retry = 0
         data = None
-        while retry < 5:
+        max_retry = 8
+        while retry < max_retry:
             try:
-                resp = requests.get(url, params=params, timeout=30)
+                resp = requests.get(url, params=params, timeout=60)
                 resp.raise_for_status()
                 data = resp.json()
                 break
             except Exception as e:
                 retry += 1
-                wait = DELAY * (3 ** retry)
-                print(f"  [재시도 {retry}/5] page={page}: {e} → {wait:.0f}초 대기")
+                wait = min(DELAY * (3 ** retry), 60)
+                print(f"  [재시도 {retry}/{max_retry}] page={page}: {e} → {wait:.0f}초 대기")
                 time.sleep(wait)
 
         if data is None:
-            print(f"  [포기] page={page}")
-            break
+            # 재시도를 다 소진하고도 실패 — 부분 데이터를 완료로 착각하지 않도록 예외로 처리
+            raise RuntimeError(f"{url} page={page} 에서 {max_retry}회 재시도 후에도 실패했습니다. (지금까지 수집: {len(items)}건)")
 
         # 활용가이드 JSON 예제 기준: response/header/body 래핑 없이 최상위에 items 존재
         page_items = data.get("items", {})
@@ -218,13 +219,25 @@ def main():
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("\n[Step 1] 충전기 기본정보 수집 중...")
-    info_items = fetch_all(INFO_URL, limit=args.limit)
-    print(f"  → 총 {len(info_items)}건 수집 완료\n")
+    max_attempts = 3
+    info_items = status_items = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            print(f"\n[Step 1] 충전기 기본정보 수집 중... (시도 {attempt}/{max_attempts})")
+            info_items = fetch_all(INFO_URL, limit=args.limit)
+            print(f"  → 총 {len(info_items)}건 수집 완료\n")
 
-    print("[Step 2] 실시간 충전기 상태 수집 중...")
-    status_items = fetch_all(STATUS_URL, limit=args.limit)
-    print(f"  → 총 {len(status_items)}건 수집 완료\n")
+            print(f"[Step 2] 실시간 충전기 상태 수집 중... (시도 {attempt}/{max_attempts})")
+            status_items = fetch_all(STATUS_URL, limit=args.limit)
+            print(f"  → 총 {len(status_items)}건 수집 완료\n")
+            break
+        except RuntimeError as e:
+            print(f"  [중단] {e}")
+            if attempt == max_attempts:
+                raise SystemExit(
+                    f"{max_attempts}회 시도 모두 실패했습니다. 기존 데이터는 그대로 유지합니다."
+                )
+            print(f"  전체를 처음부터 다시 시도합니다...\n")
 
     print("[Step 3] 데이터 병합 중...")
     stations = build_stations(info_items, status_items)
