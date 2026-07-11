@@ -1,0 +1,38 @@
+name: 데이터 자동 갱신
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # 매일 새벽 2시 KST (UTC 17시)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r scripts/requirements.txt
+
+      - name: 충전소 데이터 수집
+        run: python scripts/fetch_stations.py
+        env:
+          EV_API_KEY: ${{ secrets.EV_API_KEY }}
+
+      - name: 지역 목록 재생성
+        run: python scripts/generate_regions.py
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _rawdata/ _data/
+          git diff --cached --quiet || git commit -m "chore: 충전소 데이터 자동 갱신 $(date +'%Y-%m-%d')"
+          git push
