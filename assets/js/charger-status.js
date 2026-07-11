@@ -61,4 +61,6 @@ async function loadLiveStatus() {
   if (badge) badge.style.display = 'inline';
 }
 
-document.addEventListener('DOMContentLoaded', loadLiveStatus);
+// 스크립트가 </body> 직전에 위치해 DOM은 이미 준비된 상태이므로 즉시 실행.
+// (DOMContentLoaded는 이 시점엔 이미 지나갔을 수 있어 리스너가 안 불릴 수 있음)
+loadLiveStatus();
