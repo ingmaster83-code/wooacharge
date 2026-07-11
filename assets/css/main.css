@@ -51,11 +51,15 @@
 }
 
 * { box-sizing: border-box; }
+html, body { height: 100%; }
 body {
   margin: 0;
   font-family: "Pretendard", -apple-system, sans-serif;
   color: var(--text-primary);
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 a { text-decoration: none; color: inherit; }
 
@@ -65,7 +69,7 @@ a { text-decoration: none; color: inherit; }
 .header-nav { display: flex; gap: 16px; }
 .header-nav a { color: var(--text-secondary); font-size: .9rem; }
 
-.site-main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
+.site-main { flex: 1 0 auto; width: 100%; max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
 
 .home-hero { text-align: center; padding: 32px 0 20px; }
 .home-hero h1 { font-size: 1.6rem; margin-bottom: 8px; }
