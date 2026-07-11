@@ -3,7 +3,8 @@ fetch_stations.py - 한국환경공단 전기차 충전소 정보 API 전체 수
 결과를 _rawdata/stations.json으로 저장
 
 API: https://www.data.go.kr/data/15076352/openapi.do (한국환경공단_전기자동차 충전소 정보)
-  - getChargerInfo   : 충전소/충전기 기본 정보
+  OpenAPI 활용가이드 v1.23 기준 필드명 반영
+  - getChargerInfo   : 충전소/충전기 기본 정보 (충전기 단위 레코드, statId+chgerId로 station 그룹핑)
   - getChargerStatus : 충전기 실시간 상태
 
 사용법:
@@ -33,11 +34,31 @@ BASE_URL = "http://apis.data.go.kr/B552584/EvCharger"
 INFO_URL = f"{BASE_URL}/getChargerInfo"
 STATUS_URL = f"{BASE_URL}/getChargerStatus"
 
-OUT_DIR  = Path(__file__).parent.parent / "_rawdata"
+SCRIPT_DIR = Path(__file__).parent
+OUT_DIR  = SCRIPT_DIR.parent / "_rawdata"
 OUT_FILE = OUT_DIR / "stations.json"
 
 BATCH = 100
 DELAY = 0.3
+
+ZCODE_MAP  = json.loads((SCRIPT_DIR / "zcode.json").read_text(encoding="utf-8"))
+ZSCODE_MAP = json.loads((SCRIPT_DIR / "zscode.json").read_text(encoding="utf-8"))
+
+# chgerType(충전기 타입) 코드 중 "완속"이 명시된 코드만 완속, 나머지는 급속
+# 02: AC완속, 08: DC콤보(완속) — OpenAPI 활용가이드 v1.23 공통코드 기준
+SLOW_CHARGER_TYPES = {"02", "08"}
+
+# stat(충전기 상태) 공통코드 (활용가이드 v1.23 기준)
+STATUS_MAP = {
+    "0": ("상태미확인", "unknown"),   # 알수없음
+    "1": ("통신이상", "unknown"),
+    "2": ("충전가능", "avail"),       # 충전대기
+    "3": ("충전중", "busy"),
+    "4": ("운영중지", "unknown"),
+    "5": ("점검중", "unknown"),
+    "6": ("예약중", "busy"),
+    "9": ("상태미확인", "unknown"),
+}
 
 
 def fetch_all(url: str, extra_params: dict = None) -> list:
@@ -72,11 +93,12 @@ def fetch_all(url: str, extra_params: dict = None) -> list:
             print(f"  [포기] page={page}")
             break
 
-        body = data.get("items", {})
-        page_items = body.get("item", []) if isinstance(body, dict) else []
+        # 활용가이드 JSON 예제 기준: response/header/body 래핑 없이 최상위에 items 존재
+        page_items = data.get("items", {})
+        if isinstance(page_items, dict):
+            page_items = page_items.get("item", [])
         if isinstance(page_items, dict):
             page_items = [page_items]
-
         if not page_items:
             break
 
@@ -97,42 +119,54 @@ def slugify(text: str) -> str:
     return text[:40].strip("-").lower()
 
 
-def parse_sido_sigungu(addr: str):
-    """주소 문자열에서 시도/시군구 추출 (간단 파싱, 필요시 정교화)"""
-    if not addr:
-        return "", ""
-    tokens = addr.split()
-    sido = tokens[0] if tokens else ""
-    sigungu = tokens[1] if len(tokens) > 1 else ""
-    return sido, sigungu
-
-
 def build_stations(info_items: list, status_items: list) -> list:
-    """충전소 ID 기준으로 충전기 정보 + 실시간 상태를 합쳐 station 레코드 생성"""
+    """충전소 ID 기준으로 충전기 정보 + 실시간 상태를 합쳐 station 레코드 생성.
+    삭제된 충전기(delYn=Y)는 제외한다."""
     status_by_charger = {
         f"{s.get('statId')}_{s.get('chgerId')}": s for s in status_items
     }
 
     stations = {}
     for it in info_items:
+        if it.get("delYn") == "Y":
+            continue
+
         stat_id = it.get("statId")
         if not stat_id:
             continue
+
         if stat_id not in stations:
-            sido, sigungu = parse_sido_sigungu(it.get("addr", ""))
+            zcode = str(it.get("zcode", ""))
+            zscode = str(it.get("zscode", ""))
+            sido = ZCODE_MAP.get(zcode, "")
+            sigungu = ZSCODE_MAP.get(zscode, "")
+
+            floor_type = it.get("floorType", "")
+            floor_num = it.get("floorNum", "")
+            floor_label = ""
+            if floor_num:
+                floor_label = f"{'지하' if floor_type == 'B' else '지상'} {floor_num}층"
+
+            addr = it.get("addr", "")
+            addr_detail = it.get("addrDetail", "")
+            full_addr = f"{addr} {addr_detail}".strip() if addr_detail else addr
+
             stations[stat_id] = {
                 "id": stat_id,
                 "slug": f"{slugify(it.get('statNm',''))}-{stat_id}",
                 "name": it.get("statNm", ""),
                 "sido": sido,
                 "sigungu": sigungu,
-                "address": it.get("addr", ""),
-                "floor": it.get("floor", "") or "",
-                "operator": it.get("bnm", ""),
+                "address": full_addr,
+                "floor": floor_label,
+                "operator": it.get("busiNm") or it.get("bnm", ""),
                 "tel": it.get("busiCall", ""),
                 "hours": it.get("useTime", "") or "24시간",
                 "parking_free": it.get("parkingFree") == "Y",
                 "restricted": it.get("limitYn") == "Y",
+                "restrict_detail": it.get("limitDetail", ""),
+                "note": it.get("note", ""),
+                "install_year": it.get("year", ""),
                 "lat": it.get("lat"),
                 "lon": it.get("lng"),
                 "chargers": [],
@@ -141,16 +175,11 @@ def build_stations(info_items: list, status_items: list) -> list:
 
         status_key = f"{stat_id}_{it.get('chgerId')}"
         status = status_by_charger.get(status_key, {})
-        stat_code = status.get("stat", "9")
-        status_map = {
-            "2": ("충전가능", "avail"),
-            "3": ("충전중", "busy"),
-            "4": ("운영중지", "unknown"),
-            "5": ("점검중", "unknown"),
-        }
-        status_text, status_class = status_map.get(str(stat_code), ("상태미확인", "unknown"))
+        stat_code = str(status.get("stat", "9"))
+        status_text, status_class = STATUS_MAP.get(stat_code, ("상태미확인", "unknown"))
 
-        speed = "급속" if str(it.get("chgerType", "")) in ("01", "02", "06", "07") else "완속"
+        chger_type = str(it.get("chgerType", ""))
+        speed = "완속" if chger_type in SLOW_CHARGER_TYPES else "급속"
 
         stations[stat_id]["chargers"].append({
             "charger_id": it.get("chgerId"),
@@ -178,7 +207,7 @@ def main():
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("\n[Step 1] 충전소 기본정보 수집 중...")
+    print("\n[Step 1] 충전기 기본정보 수집 중...")
     info_items = fetch_all(INFO_URL)
     if args.limit:
         info_items = info_items[: args.limit]
