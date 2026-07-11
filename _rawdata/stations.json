@@ -1,565 +1,2220 @@
 [
   {
-    "id": 1,
-    "slug": "station-001",
-    "name": "강남구 이마트 충전소",
+    "id": "ME174013",
+    "slug": "낙성대동주민센터-ME174013",
+    "name": "낙성대동주민센터",
     "sido": "서울특별시",
-    "sigungu": "강남구",
-    "address": "서울특별시 강남구 어딘가로 13",
-    "floor": "지하 2층",
-    "operator": "환경부",
-    "tel": "1588-4657",
-    "hours": "06:00~24:00",
-    "parking_free": false,
-    "restricted": false,
-    "lat": 37.58011,
-    "lon": 127.005148,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 2,
-    "slug": "station-002",
-    "name": "강남구 시청 충전소",
-    "sido": "서울특별시",
-    "sigungu": "강남구",
-    "address": "서울특별시 강남구 어딘가로 259",
-    "floor": "",
-    "operator": "한국전력공사",
-    "tel": "1588-4257",
-    "hours": "24시간",
-    "parking_free": true,
-    "restricted": false,
-    "lat": 37.551263,
-    "lon": 126.911457,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 3,
-    "slug": "station-003",
-    "name": "강남구 주민센터 충전소",
-    "sido": "서울특별시",
-    "sigungu": "강남구",
-    "address": "서울특별시 강남구 어딘가로 80",
-    "floor": "지하 1층",
-    "operator": "차지비",
-    "tel": "1588-2674",
-    "hours": "06:00~24:00",
-    "parking_free": false,
-    "restricted": true,
-    "lat": 37.597618,
-    "lon": 127.070138,
-    "chargers": [
-      {
-        "speed": "완속",
-        "capacity": 7,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      },
-      {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 4,
-    "slug": "station-004",
-    "name": "강남구 시청 충전소",
-    "sido": "서울특별시",
-    "sigungu": "강남구",
-    "address": "서울특별시 강남구 어딘가로 36",
+    "sigungu": "관악구",
+    "address": "서울특별시 관악구 낙성대로4가길 5",
     "floor": "지상 1층",
-    "operator": "환경부",
-    "tel": "1588-5741",
-    "hours": "24시간",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
     "parking_free": true,
-    "restricted": true,
-    "lat": 37.530538,
-    "lon": 126.964023,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.476296",
+    "lon": "126.9583876",
     "chargers": [
       {
+        "charger_id": "01",
         "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
+        "capacity": "50",
         "status_text": "상태미확인",
         "status_class": "unknown"
       }
     ],
-    "last_updated": "2026-07-11 12:00"
+    "last_updated": ""
   },
   {
-    "id": 5,
-    "slug": "station-005",
-    "name": "강남구 이마트 충전소",
-    "sido": "서울특별시",
-    "sigungu": "강남구",
-    "address": "서울특별시 강남구 어딘가로 88",
-    "floor": "",
-    "operator": "환경부",
-    "tel": "1588-3677",
-    "hours": "24시간",
-    "parking_free": false,
-    "restricted": true,
-    "lat": 37.622949,
-    "lon": 126.893885,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 6,
-    "slug": "station-006",
-    "name": "서초구 이마트 충전소",
+    "id": "ME174027",
+    "slug": "서울추모공원-ME174027",
+    "name": "서울추모공원",
     "sido": "서울특별시",
     "sigungu": "서초구",
-    "address": "서울특별시 서초구 어딘가로 109",
-    "floor": "",
-    "operator": "차지비",
-    "tel": "1588-4483",
-    "hours": "24시간",
+    "address": "서울특별시 서초구 양재대로12길 74  1층 입구",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
     "parking_free": false,
-    "restricted": true,
-    "lat": 37.554156,
-    "lon": 126.907464,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.4536062",
+    "lon": "127.0428005",
     "chargers": [
       {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      },
-      {
-        "speed": "완속",
-        "capacity": 11,
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
         "status_text": "상태미확인",
         "status_class": "unknown"
       }
     ],
-    "last_updated": "2026-07-11 12:00"
+    "last_updated": ""
   },
   {
-    "id": 7,
-    "slug": "station-007",
-    "name": "서초구 복합쇼핑몰 충전소",
+    "id": "ME174029",
+    "slug": "롯데마트-송파점-ME174029",
+    "name": "롯데마트 송파점",
+    "sido": "서울특별시",
+    "sigungu": "송파구",
+    "address": "서울특별시 송파구 중대로 80  지하4층 C8",
+    "floor": "지하 4층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.4918392",
+    "lon": "127.1178931",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174037",
+    "slug": "현대자동차-수색대리점-ME174037",
+    "name": "현대자동차 수색대리점",
+    "sido": "서울특별시",
+    "sigungu": "은평구",
+    "address": "서울특별시 은평구 수색로 342-1",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.5867665",
+    "lon": "126.8880299",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174039",
+    "slug": "태화빌딩-ME174039",
+    "name": "태화빌딩",
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "address": "서울특별시 종로구 인사동5길 29  지상주차장",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.5718148",
+    "lon": "126.9850443",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174046",
+    "slug": "위미의례회관-ME174046",
+    "name": "위미의례회관",
+    "sido": "제주특별자치도",
+    "sigungu": "서귀포시",
+    "address": "제주특별자치도 서귀포시 남원읍 중산간동로 6862",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.289615",
+    "lon": "126.6576261",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174050",
+    "slug": "중문-관광단지-ME174050",
+    "name": "중문 관광단지",
+    "sido": "제주특별자치도",
+    "sigungu": "서귀포시",
+    "address": "제주특별자치도 서귀포시 색달동 2889-1 중문색달해변 북측 증설주차장",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.2461812",
+    "lon": "126.4143365",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "03",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "04",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "05",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143803"
+  },
+  {
+    "id": "ME174061",
+    "slug": "표선-의례회관-앞-공영주차장-ME174061",
+    "name": "표선 의례회관 앞 공영주차장",
+    "sido": "제주특별자치도",
+    "sigungu": "서귀포시",
+    "address": "제주특별자치도 서귀포시 표선면 표선리 2103",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.3272826",
+    "lon": "126.8233934",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143608"
+  },
+  {
+    "id": "ME174062",
+    "slug": "회수사거리-인근-공영주차장-ME174062",
+    "name": "회수사거리 인근 공영주차장",
+    "sido": "제주특별자치도",
+    "sigungu": "서귀포시",
+    "address": "제주특별자치도 서귀포시 회수동 788-2",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.2631165",
+    "lon": "126.4425962",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143556"
+  },
+  {
+    "id": "ME174064",
+    "slug": "용암해수산업화지원센터-ME174064",
+    "name": "용암해수산업화지원센터",
+    "sido": "제주특별자치도",
+    "sigungu": "제주시",
+    "address": "제주특별자치도 제주시 구좌읍 일주동로 2706-40",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.5425723",
+    "lon": "126.8125030",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143743"
+  },
+  {
+    "id": "ME174067",
+    "slug": "한국폴리텍대학-제주캠퍼스-ME174067",
+    "name": "한국폴리텍대학 제주캠퍼스",
+    "sido": "제주특별자치도",
+    "sigungu": "제주시",
+    "address": "제주특별자치도 제주시 산천단 동3길 2  북쪽주차장 입구",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.4464702",
+    "lon": "126.5613493",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174077",
+    "slug": "제주시-상하수도본부-ME174077",
+    "name": "제주시 상하수도본부",
+    "sido": "제주특별자치도",
+    "sigungu": "제주시",
+    "address": "제주특별자치도 제주시 조천읍 중산간동로 601",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "33.4997499",
+    "lon": "126.6496365",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143505"
+  },
+  {
+    "id": "ME174085",
+    "slug": "압해읍사무소-ME174085",
+    "name": "압해읍사무소",
+    "sido": "전남광주통합특별시",
+    "sigungu": "",
+    "address": "전남광주통합특별시 신안군 압해읍 학교리 585",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "34.8654674",
+    "lon": "126.3127835",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143657"
+  },
+  {
+    "id": "ME174118",
+    "slug": "보은군청앞-스포츠사업단-대형주차장-ME174118",
+    "name": "보은군청앞 스포츠사업단 대형주차장",
+    "sido": "충청북도",
+    "sigungu": "보은군",
+    "address": "충청북도 보은군 보은읍 성주리 288-6  스포츠 사업단 대형주차장 해병대 전우회 건물옆",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.4910864",
+    "lon": "127.7304676",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143600"
+  },
+  {
+    "id": "ME174119",
+    "slug": "강화풍물시장-공영주차장-ME174119",
+    "name": "강화풍물시장 공영주차장",
+    "sido": "인천광역시",
+    "sigungu": "강화군",
+    "address": "인천광역시 강화군 강화읍 갑곳리 849  고엽제전우회 건물 옆",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.7404676",
+    "lon": "126.4919478",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174120",
+    "slug": "계산1택지-공영주차장-ME174120",
+    "name": "계산1택지 공영주차장",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "address": "인천광역시 계양구 계산동 1060  구두수선방 옆",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.540182019",
+    "lon": "126.73630068",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174125",
+    "slug": "현대자동차-블루핸즈-서인천-서비스-주차장-입구-ME174125",
+    "name": "㈜현대자동차 블루핸즈 서인천 서비스 주차장 입구",
+    "sido": "인천광역시",
+    "sigungu": "",
+    "address": "인천광역시 서해구 원석로 160  주차장 입구 우측 완속충전기 옆",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "평일08:30~18:00",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.509973287",
+    "lon": "126.64197627",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174128",
+    "slug": "도원역-부근-공영주차장-ME174128",
+    "name": "도원역 부근 공영주차장",
+    "sido": "인천광역시",
+    "sigungu": "",
+    "address": "인천광역시 제물포구 도원동 5-7  주차장 입구",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.467239217",
+    "lon": "126.64140301",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174131",
+    "slug": "갈현동-주민센터-주차장-ME174131",
+    "name": "갈현동 주민센터 주차장",
+    "sido": "경기도",
+    "sigungu": "과천시",
+    "address": "경기도 과천시 갈현동 679  주민센터 입구앞",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.419407323",
+    "lon": "126.98891498",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174134",
+    "slug": "남양주-시청-ME174134",
+    "name": "남양주 시청",
+    "sido": "경기도",
+    "sigungu": "남양주시",
+    "address": "경기도 남양주시 금곡동 185-10  옥외 주차장",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": false,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.6363052",
+    "lon": "127.2177977",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174140",
+    "slug": "갯골생태공원-ME174140",
+    "name": "갯골생태공원",
+    "sido": "경기도",
+    "sigungu": "시흥시",
+    "address": "경기도 시흥시 장곡동 724-32  오른쪽 주차장 입구 오른쪽 끝부지",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.3888368",
+    "lon": "126.7806444",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143657"
+  },
+  {
+    "id": "ME174152",
+    "slug": "한강유역환경청-ME174152",
+    "name": "한강유역환경청",
+    "sido": "경기도",
+    "sigungu": "하남시",
+    "address": "경기도 하남시 미사강변 한강로 299  지하주차장 입구 앞",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "07:00~24:00",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.570580700",
+    "lon": "127.19452200",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174154",
+    "slug": "유승기업현대블루핸즈-ME174154",
+    "name": "유승기업(현대블루핸즈)",
+    "sido": "대전광역시",
+    "sigungu": "서구",
+    "address": "대전광역시 서구 계룡로 510  현대사무실 옆",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.3436911",
+    "lon": "127.3804383",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME174162",
+    "slug": "오월드-내-주차장-ME174162",
+    "name": "오월드 내 주차장",
+    "sido": "대전광역시",
+    "sigungu": "중구",
+    "address": "대전광역시 중구 사정동 142  플라워랜드 주차장",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.290862911",
+    "lon": "127.39720409",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143546"
+  },
+  {
+    "id": "ME178003",
+    "slug": "기흥부산-휴게소-ME178003",
+    "name": "기흥(부산) 휴게소",
+    "sido": "경기도",
+    "sigungu": "용인시",
+    "address": "경기도 용인시 기흥구 공세로 173 (공세동)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.2356557",
+    "lon": "127.105021",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178004",
+    "slug": "김천부산-휴게소-ME178004",
+    "name": "김천(부산) 휴게소",
+    "sido": "경상북도",
+    "sigungu": "김천시",
+    "address": "경상북도 김천시 농소면 경부고속도로 193 (신촌리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.129385",
+    "lon": "128.164209",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143446"
+  },
+  {
+    "id": "ME178005",
+    "slug": "김천서울-휴게소-ME178005",
+    "name": "김천(서울) 휴게소",
+    "sido": "경상북도",
+    "sigungu": "김천시",
+    "address": "경상북도 김천시 농소면 경부고속도로 194 (신촌리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.1307247",
+    "lon": "128.1632209",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143511"
+  },
+  {
+    "id": "ME178009",
+    "slug": "서울만남부산-휴게소-ME178009",
+    "name": "서울만남(부산) 휴게소",
     "sido": "서울특별시",
     "sigungu": "서초구",
-    "address": "서울특별시 서초구 어딘가로 186",
-    "floor": "지하 1층",
-    "operator": "환경부",
-    "tel": "1588-9348",
-    "hours": "24시간",
-    "parking_free": true,
-    "restricted": true,
-    "lat": 37.462352,
-    "lon": 126.875995,
-    "chargers": [
-      {
-        "speed": "완속",
-        "capacity": 7,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 8,
-    "slug": "station-008",
-    "name": "서초구 이마트 충전소",
-    "sido": "서울특별시",
-    "sigungu": "서초구",
-    "address": "서울특별시 서초구 어딘가로 275",
-    "floor": "지하 2층",
-    "operator": "차지비",
-    "tel": "1588-2827",
-    "hours": "06:00~24:00",
-    "parking_free": false,
-    "restricted": false,
-    "lat": 37.633128,
-    "lon": 127.043904,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      },
-      {
-        "speed": "완속",
-        "capacity": 7,
-        "status_text": "상태미확인",
-        "status_class": "unknown"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 9,
-    "slug": "station-009",
-    "name": "마포구 공영주차장 충전소",
-    "sido": "서울특별시",
-    "sigungu": "마포구",
-    "address": "서울특별시 마포구 어딘가로 251",
+    "address": "서울특별시 서초구 양재대로12길 73-71 (원지동)",
     "floor": "지상 1층",
-    "operator": "한국전력공사",
-    "tel": "1588-6947",
-    "hours": "24시간",
-    "parking_free": true,
-    "restricted": false,
-    "lat": 37.433878,
-    "lon": 127.091403,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 10,
-    "slug": "station-010",
-    "name": "마포구 현대백화점 충전소",
-    "sido": "서울특별시",
-    "sigungu": "마포구",
-    "address": "서울특별시 마포구 어딘가로 66",
-    "floor": "지상 2층",
-    "operator": "스타코프",
-    "tel": "1588-3705",
-    "hours": "06:00~24:00",
-    "parking_free": true,
-    "restricted": false,
-    "lat": 37.480039,
-    "lon": 126.989789,
-    "chargers": [
-      {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "충전중",
-        "status_class": "busy"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 11,
-    "slug": "station-011",
-    "name": "성남시 아파트단지 충전소",
-    "sido": "경기도",
-    "sigungu": "성남시",
-    "address": "경기도 성남시 어딘가로 62",
-    "floor": "지하 1층",
     "operator": "환경부",
-    "tel": "1588-2049",
-    "hours": "24시간",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
     "parking_free": true,
     "restricted": false,
-    "lat": 37.482565,
-    "lon": 126.849298,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.4600218",
+    "lon": "127.0420378",
     "chargers": [
       {
+        "charger_id": "01",
         "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 12,
-    "slug": "station-012",
-    "name": "성남시 공영주차장 충전소",
-    "sido": "경기도",
-    "sigungu": "성남시",
-    "address": "경기도 성남시 어딘가로 37",
-    "floor": "",
-    "operator": "환경부",
-    "tel": "1588-5562",
-    "hours": "24시간",
-    "parking_free": false,
-    "restricted": false,
-    "lat": 37.697154,
-    "lon": 126.999313,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "충전중",
-        "status_class": "busy"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 13,
-    "slug": "station-013",
-    "name": "성남시 복합쇼핑몰 충전소",
-    "sido": "경기도",
-    "sigungu": "성남시",
-    "address": "경기도 성남시 어딘가로 211",
-    "floor": "지상 2층",
-    "operator": "한국전력공사",
-    "tel": "1588-2612",
-    "hours": "06:00~24:00",
-    "parking_free": true,
-    "restricted": true,
-    "lat": 37.449281,
-    "lon": 126.885477,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "완속",
-        "capacity": 7,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 14,
-    "slug": "station-014",
-    "name": "성남시 롯데마트 충전소",
-    "sido": "경기도",
-    "sigungu": "성남시",
-    "address": "경기도 성남시 어딘가로 48",
-    "floor": "지하 1층",
-    "operator": "환경부",
-    "tel": "1588-7658",
-    "hours": "24시간",
-    "parking_free": false,
-    "restricted": false,
-    "lat": 37.434091,
-    "lon": 126.941692,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 15,
-    "slug": "station-015",
-    "name": "수원시 롯데마트 충전소",
-    "sido": "경기도",
-    "sigungu": "수원시",
-    "address": "경기도 수원시 어딘가로 297",
-    "floor": "",
-    "operator": "한국전력공사",
-    "tel": "1588-6138",
-    "hours": "06:00~24:00",
-    "parking_free": true,
-    "restricted": false,
-    "lat": 37.672316,
-    "lon": 126.87523,
-    "chargers": [
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "완속",
-        "capacity": 7,
+        "capacity": "50",
         "status_text": "상태미확인",
         "status_class": "unknown"
       },
       {
+        "charger_id": "02",
         "speed": "급속",
-        "capacity": 100,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      },
-      {
-        "speed": "완속",
-        "capacity": 7,
+        "capacity": "50",
         "status_text": "상태미확인",
         "status_class": "unknown"
       }
     ],
-    "last_updated": "2026-07-11 12:00"
+    "last_updated": ""
   },
   {
-    "id": 16,
-    "slug": "station-016",
-    "name": "수원시 롯데마트 충전소",
-    "sido": "경기도",
-    "sigungu": "수원시",
-    "address": "경기도 수원시 어딘가로 42",
-    "floor": "지상 2층",
-    "operator": "스타코프",
-    "tel": "1588-9565",
-    "hours": "24시간",
-    "parking_free": false,
-    "restricted": false,
-    "lat": 37.510755,
-    "lon": 126.907684,
-    "chargers": [
-      {
-        "speed": "완속",
-        "capacity": 11,
-        "status_text": "충전중",
-        "status_class": "busy"
-      },
-      {
-        "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전가능",
-        "status_class": "avail"
-      }
-    ],
-    "last_updated": "2026-07-11 12:00"
-  },
-  {
-    "id": 17,
-    "slug": "station-017",
-    "name": "수원시 아파트단지 충전소",
-    "sido": "경기도",
-    "sigungu": "수원시",
-    "address": "경기도 수원시 어딘가로 289",
+    "id": "ME178010",
+    "slug": "입장거봉포도서울-휴게소-ME178010",
+    "name": "입장거봉포도(서울) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "천안시",
+    "address": "충청남도 천안시 서북구 입장면 연곡길 407",
     "floor": "지상 1층",
-    "operator": "한국전력공사",
-    "tel": "1588-9808",
-    "hours": "06:00~24:00",
-    "parking_free": false,
-    "restricted": true,
-    "lat": 37.680759,
-    "lon": 127.091781,
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9427836",
+    "lon": "127.1943661",
     "chargers": [
       {
+        "charger_id": "01",
         "speed": "급속",
-        "capacity": 50,
-        "status_text": "충전중",
-        "status_class": "busy"
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
       },
       {
-        "speed": "완속",
-        "capacity": 11,
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
         "status_text": "상태미확인",
         "status_class": "unknown"
       }
     ],
-    "last_updated": "2026-07-11 12:00"
+    "last_updated": "20260711143505"
+  },
+  {
+    "id": "ME178011",
+    "slug": "천안삼거리서울-휴게소-ME178011",
+    "name": "천안삼거리(서울) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "천안시",
+    "address": "충청남도 천안시 동남구 쉼1길 42 (삼룡동)173-1",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.7882107",
+    "lon": "127.1735101",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "03",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143655"
+  },
+  {
+    "id": "ME178012",
+    "slug": "금강부산-휴게소-ME178012",
+    "name": "금강(부산) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "옥천군",
+    "address": "충청북도 옥천군 동이면 금강로 596 (조령리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.2791549",
+    "lon": "127.6736776",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "03",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143555"
+  },
+  {
+    "id": "ME178014",
+    "slug": "옥산부산-휴게소-ME178014",
+    "name": "옥산(부산) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "청주시",
+    "address": "충청북도 청주시 흥덕구 옥산면 경부고속도로 309 (오산리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.6567726",
+    "lon": "127.3703995",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143644"
+  },
+  {
+    "id": "ME178016",
+    "slug": "옥천만남-휴게소-ME178016",
+    "name": "옥천만남 휴게소",
+    "sido": "충청북도",
+    "sigungu": "옥천군",
+    "address": "충청북도 옥천군 옥천읍 중앙로 135 (삼양리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.3079099",
+    "lon": "127.5731265",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143511"
+  },
+  {
+    "id": "ME178017",
+    "slug": "음성남이-휴게소-ME178017",
+    "name": "음성(남이) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "음성군",
+    "address": "충청북도 음성군 삼성면 용성리 산 44",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.0186894",
+    "lon": "127.4809059",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143756"
+  },
+  {
+    "id": "ME178019",
+    "slug": "죽암서울-휴게소-ME178019",
+    "name": "죽암(서울) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "청주시",
+    "address": "충청북도 청주시 서원구 현도면 경부고속도로 290",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.4957964",
+    "lon": "127.4308677",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143604"
+  },
+  {
+    "id": "ME178020",
+    "slug": "청주서울-휴게소-ME178020",
+    "name": "청주(서울) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "청주시",
+    "address": "충청북도 청주시 흥덕구 옥산면 경부고속도로 318 (장남리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.7162491",
+    "lon": "127.3487936",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178022",
+    "slug": "황간서울-휴게소-ME178022",
+    "name": "황간(서울) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "영동군",
+    "address": "충청북도 영동군 황간면 회포1길 65 (회포리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.2485222",
+    "lon": "127.8546968",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143520"
+  },
+  {
+    "id": "ME178024",
+    "slug": "함평천지서울-휴게소-ME178024",
+    "name": "함평천지(서울) 휴게소",
+    "sido": "전남광주통합특별시",
+    "sigungu": "",
+    "address": "전남광주통합특별시 함평군 함평읍 서해안고속도로 38 (죽암리)",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.1295648",
+    "lon": "126.4818537",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178031",
+    "slug": "서천서울-휴게소-ME178031",
+    "name": "서천(서울) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "서천군",
+    "address": "충청남도 서천군 비인면 서해안고속도로 168 (성산리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.1320831",
+    "lon": "126.6275272",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143639"
+  },
+  {
+    "id": "ME178032",
+    "slug": "홍성목포-휴게소-ME178032",
+    "name": "홍성(목포) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "홍성군",
+    "address": "충청남도 홍성군 은하면 서해안고속도로 221 (금국리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.5520256",
+    "lon": "126.579626",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178041",
+    "slug": "정읍녹두장군순천-휴게소-ME178041",
+    "name": "정읍녹두장군(순천) 휴게소",
+    "sido": "전북특별자치도",
+    "sigungu": "정읍시",
+    "address": "전북특별자치도 정읍시 북면 정신로 135-61 (남산리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.6015871",
+    "lon": "126.8626805",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143608"
+  },
+  {
+    "id": "ME178043",
+    "slug": "이천남이-휴게소-ME178043",
+    "name": "이천(남이) 휴게소",
+    "sido": "경기도",
+    "sigungu": "이천시",
+    "address": "경기도 이천시 마장면 중부대로609번길 244-35 (목리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.2651225",
+    "lon": "127.4032213",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143656"
+  },
+  {
+    "id": "ME178045",
+    "slug": "음성하남-휴게소-ME178045",
+    "name": "음성(하남) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "음성군",
+    "address": "충청북도 음성군 삼성면 중부고속도로 52 (양덕리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.0227527",
+    "lon": "127.4844255",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143705"
+  },
+  {
+    "id": "ME178046",
+    "slug": "건천부산-휴게소-ME178046",
+    "name": "건천(부산) 휴게소",
+    "sido": "경상북도",
+    "sigungu": "경주시",
+    "address": "경상북도 경주시 건천읍 경부고속도로 77 (방내리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.830231",
+    "lon": "129.1099622",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143705"
+  },
+  {
+    "id": "ME178048",
+    "slug": "고성공룡나라통영-휴게소-ME178048",
+    "name": "고성공룡나라(통영) 휴게소",
+    "sido": "경상남도",
+    "sigungu": "고성군",
+    "address": "경상남도 고성군 대가면 통영대전고속도로 29 (송계리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.0515247",
+    "lon": "128.2640664",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178049",
+    "slug": "고성공룡나라대전-휴게소-ME178049",
+    "name": "고성공룡나라(대전) 휴게소",
+    "sido": "경상남도",
+    "sigungu": "고성군",
+    "address": "경상남도 고성군 대가면 통영대전고속도로 32 (신전리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.0570523",
+    "lon": "128.2513447",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143447"
+  },
+  {
+    "id": "ME178055",
+    "slug": "금산인삼랜드대전-휴게소-ME178055",
+    "name": "금산인삼랜드(대전) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "금산군",
+    "address": "충청남도 금산군 군북면 대암길 34-30 (외부리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.1550665",
+    "lon": "127.4964759",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143614"
+  },
+  {
+    "id": "ME178066",
+    "slug": "하남드림-휴게소-ME178066",
+    "name": "하남드림 휴게소",
+    "sido": "경기도",
+    "sigungu": "하남시",
+    "address": "경기도 하남시 중부고속도로 117-1 (천현동)",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.5304600",
+    "lon": "127.2068880",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "점검중",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "20260711143730"
+  },
+  {
+    "id": "ME178069",
+    "slug": "충주창원-휴게소-ME178069",
+    "name": "충주(창원) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "충주시",
+    "address": "충청북도 충주시 중앙탑면 중부내륙고속도로 231 (용전리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.0219027",
+    "lon": "127.8379417",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143645"
+  },
+  {
+    "id": "ME178070",
+    "slug": "충주양평-휴게소-ME178070",
+    "name": "충주(양평) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "충주시",
+    "address": "충청북도 충주시 중앙탑면 중부내륙고속도로 230 (용전리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.0235629",
+    "lon": "127.8390638",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143729"
+  },
+  {
+    "id": "ME178073",
+    "slug": "원주부산-휴게소-ME178073",
+    "name": "원주(부산) 휴게소",
+    "sido": "강원특별자치도",
+    "sigungu": "원주시",
+    "address": "강원특별자치도 원주시 호저면 마근거리길 120 (옥산리) 211",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.4345781",
+    "lon": "127.9292055",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "03",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143629"
+  },
+  {
+    "id": "ME178075",
+    "slug": "단양팔경부산-휴게소-ME178075",
+    "name": "단양팔경(부산) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "단양군",
+    "address": "충청북도 단양군 적성면 기동2길 32-37 (기동리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9946821",
+    "lon": "128.2885772",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178076",
+    "slug": "단양팔경춘천-휴게소-ME178076",
+    "name": "단양팔경(춘천) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "단양군",
+    "address": "충청북도 단양군 단성면 하방3길 100 (하방리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9434738",
+    "lon": "128.3235426",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178077",
+    "slug": "치악부산-휴게소-ME178077",
+    "name": "치악(부산) 휴게소",
+    "sido": "강원특별자치도",
+    "sigungu": "원주시",
+    "address": "강원특별자치도 원주시 신림면 치악로 416 (금창리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.2533111",
+    "lon": "128.0494506",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "20260711143717"
+  },
+  {
+    "id": "ME178081",
+    "slug": "구정삼척-휴게소-ME178081",
+    "name": "구정(삼척) 휴게소",
+    "sido": "강원특별자치도",
+    "sigungu": "강릉시",
+    "address": "강원특별자치도 강릉시 구정면 동해고속도로 345 (제비리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.7217564",
+    "lon": "128.8520681",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "03",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "20260711143807"
+  },
+  {
+    "id": "ME178082",
+    "slug": "동해삼척-휴게소-ME178082",
+    "name": "동해(삼척) 휴게소",
+    "sido": "강원특별자치도",
+    "sigungu": "동해시",
+    "address": "강원특별자치도 동해시 동해대로 6437 동해휴게소동해방향 (망상동)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "37.60143",
+    "lon": "129.0738745",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": "20260711143541"
+  },
+  {
+    "id": "ME178084",
+    "slug": "사천부산-휴게소-ME178084",
+    "name": "사천(부산) 휴게소",
+    "sido": "경상남도",
+    "sigungu": "사천시",
+    "address": "경상남도 사천시 곤양면 서삼로 619 (묵곡리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.0732831",
+    "lon": "128.0110198",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178089",
+    "slug": "거창광주-휴게소-ME178089",
+    "name": "거창(광주) 휴게소",
+    "sido": "경상남도",
+    "sigungu": "거창군",
+    "address": "경상남도 거창군 가조면 가조가야로 1523 (도리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.7084155",
+    "lon": "128.0576192",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143521"
+  },
+  {
+    "id": "ME178090",
+    "slug": "거창대구-휴게소-ME178090",
+    "name": "거창(대구) 휴게소",
+    "sido": "경상남도",
+    "sigungu": "거창군",
+    "address": "경상남도 거창군 가조면 도리 453",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.7056972",
+    "lon": "128.0571946",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      }
+    ],
+    "last_updated": "20260711143800"
+  },
+  {
+    "id": "ME178094",
+    "slug": "강천산대구-휴게소-ME178094",
+    "name": "강천산(대구) 휴게소",
+    "sido": "전북특별자치도",
+    "sigungu": "순창군",
+    "address": "전북특별자치도 순창군 순창읍 88올림픽고속도로 22 (백산리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.3644118",
+    "lon": "127.1044692",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143656"
+  },
+  {
+    "id": "ME178098",
+    "slug": "와촌포항-휴게소-ME178098",
+    "name": "와촌(포항) 휴게소",
+    "sido": "경상북도",
+    "sigungu": "경산시",
+    "address": "경상북도 경산시 와촌면 강학길 103 (강학리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.9520202",
+    "lon": "128.7754218",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143518"
+  },
+  {
+    "id": "ME178100",
+    "slug": "진안마이산익산-휴게소-ME178100",
+    "name": "진안마이산(익산) 휴게소",
+    "sido": "전북특별자치도",
+    "sigungu": "진안군",
+    "address": "전북특별자치도 진안군 진안읍 익산장수고속도로 41 (단양리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.7782697",
+    "lon": "127.425744",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143750"
+  },
+  {
+    "id": "ME178101",
+    "slug": "진안마이산장수-휴게소-ME178101",
+    "name": "진안마이산(장수) 휴게소",
+    "sido": "전북특별자치도",
+    "sigungu": "진안군",
+    "address": "전북특별자치도 진안군 진안읍 익산장수고속도로 42 (단양리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "35.774925",
+    "lon": "127.4262837",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143732"
+  },
+  {
+    "id": "ME178103",
+    "slug": "의성영덕-휴게소-ME178103",
+    "name": "의성(영덕) 휴게소",
+    "sido": "경상북도",
+    "sigungu": "의성군",
+    "address": "경상북도 의성군 안계면 새못안길 45-47 (양곡리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.40962390",
+    "lon": "128.44679060",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전중",
+        "status_class": "busy"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143731"
+  },
+  {
+    "id": "ME178107",
+    "slug": "예산당진-휴게소-ME178107",
+    "name": "예산(당진) 휴게소",
+    "sido": "충청남도",
+    "sigungu": "예산군",
+    "address": "충청남도 예산군 신양면 당진영덕고속도로 33 (서계양리)",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.6182862",
+    "lon": "126.8471263",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178109",
+    "slug": "안성맞춤제천-휴게소-ME178109",
+    "name": "안성맞춤(제천) 휴게소",
+    "sido": "경기도",
+    "sigungu": "안성시",
+    "address": "경기도 안성시 서운면 신능리 51-11",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.96806",
+    "lon": "127.2750034",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178110",
+    "slug": "안성맞춤평택-휴게소-ME178110",
+    "name": "안성맞춤(평택) 휴게소",
+    "sido": "경기도",
+    "sigungu": "안성시",
+    "address": "경기도 안성시 서운면 신능리 51-16",
+    "floor": "지상 1층",
+    "operator": "기후에너지환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9700252",
+    "lon": "127.2740842",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      }
+    ],
+    "last_updated": ""
+  },
+  {
+    "id": "ME178111",
+    "slug": "금왕제천-휴게소-ME178111",
+    "name": "금왕(제천) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "음성군",
+    "address": "충청북도 음성군 금왕읍 평택제천고속도로 70 (용계리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9688428",
+    "lon": "127.5902964",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "상태미확인",
+        "status_class": "unknown"
+      },
+      {
+        "charger_id": "02",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143753"
+  },
+  {
+    "id": "ME178112",
+    "slug": "금왕평택-휴게소-ME178112",
+    "name": "금왕(평택) 휴게소",
+    "sido": "충청북도",
+    "sigungu": "음성군",
+    "address": "충청북도 음성군 금왕읍 평택제천고속도로 69 (용계리)",
+    "floor": "지상 1층",
+    "operator": "환경부",
+    "tel": "1661-9408",
+    "hours": "24시간 이용가능",
+    "parking_free": true,
+    "restricted": false,
+    "restrict_detail": "",
+    "note": "",
+    "install_year": "2017",
+    "lat": "36.9706659",
+    "lon": "127.5898638",
+    "chargers": [
+      {
+        "charger_id": "01",
+        "speed": "급속",
+        "capacity": "50",
+        "status_text": "충전가능",
+        "status_class": "avail"
+      }
+    ],
+    "last_updated": "20260711143644"
   }
 ]

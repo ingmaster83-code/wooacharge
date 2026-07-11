@@ -30,7 +30,7 @@ except ImportError:
 sys.stdout.reconfigure(encoding="utf-8")
 
 API_KEY  = os.environ.get("EV_API_KEY", "")
-BASE_URL = "http://apis.data.go.kr/B552584/EvCharger"
+BASE_URL = "https://apis.data.go.kr/B552584/EvCharger"
 INFO_URL = f"{BASE_URL}/getChargerInfo"
 STATUS_URL = f"{BASE_URL}/getChargerStatus"
 
@@ -61,8 +61,8 @@ STATUS_MAP = {
 }
 
 
-def fetch_all(url: str, extra_params: dict = None) -> list:
-    """페이지네이션으로 전체 데이터 수집"""
+def fetch_all(url: str, extra_params: dict = None, limit: int = 0) -> list:
+    """페이지네이션으로 전체 데이터 수집. limit>0이면 해당 건수 도달 시 조기 종료(테스트용)."""
     items = []
     page = 1
     while True:
@@ -105,6 +105,9 @@ def fetch_all(url: str, extra_params: dict = None) -> list:
         items.extend(page_items)
         print(f"  page {page:3d} | 수집 {len(items):5d}건")
 
+        if limit and len(items) >= limit:
+            items = items[:limit]
+            break
         if len(page_items) < BATCH:
             break
         page += 1
@@ -140,6 +143,12 @@ def build_stations(info_items: list, status_items: list) -> list:
             zscode = str(it.get("zscode", ""))
             sido = ZCODE_MAP.get(zcode, "")
             sigungu = ZSCODE_MAP.get(zscode, "")
+            if not sido:
+                # 코드표에 없는 zcode (신규 행정구역 등) — 주소 텍스트에서 최대한 복구
+                tokens = (it.get("addr") or "").split()
+                sido = tokens[0] if tokens else ""
+                if not sigungu and len(tokens) > 1:
+                    sigungu = tokens[1]
 
             floor_type = it.get("floorType", "")
             floor_num = it.get("floorNum", "")
@@ -148,7 +157,9 @@ def build_stations(info_items: list, status_items: list) -> list:
                 floor_label = f"{'지하' if floor_type == 'B' else '지상'} {floor_num}층"
 
             addr = it.get("addr", "")
-            addr_detail = it.get("addrDetail", "")
+            addr_detail = it.get("addrDetail", "") or ""
+            if addr_detail.strip().lower() == "null":
+                addr_detail = ""
             full_addr = f"{addr} {addr_detail}".strip() if addr_detail else addr
 
             stations[stat_id] = {
@@ -208,13 +219,11 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     print("\n[Step 1] 충전기 기본정보 수집 중...")
-    info_items = fetch_all(INFO_URL)
-    if args.limit:
-        info_items = info_items[: args.limit]
+    info_items = fetch_all(INFO_URL, limit=args.limit)
     print(f"  → 총 {len(info_items)}건 수집 완료\n")
 
     print("[Step 2] 실시간 충전기 상태 수집 중...")
-    status_items = fetch_all(STATUS_URL)
+    status_items = fetch_all(STATUS_URL, limit=args.limit)
     print(f"  → 총 {len(status_items)}건 수집 완료\n")
 
     print("[Step 3] 데이터 병합 중...")
