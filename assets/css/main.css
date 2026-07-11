@@ -87,6 +87,7 @@ a { text-decoration: none; color: inherit; }
 .status-avail { color: #15803D; }
 .status-busy { color: #B91C1C; }
 .status-unknown { color: var(--text-light); }
+.live-badge { font-size: .72rem; font-weight: 600; color: #15803D; vertical-align: middle; }
 .charger-updated { font-size: .8rem; color: var(--text-light); margin-top: 8px; }
 
 .btn-navi { display: inline-block; padding: 10px 18px; background: var(--primary); color: #fff; border-radius: var(--radius); font-weight: 600; }

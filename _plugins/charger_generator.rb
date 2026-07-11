@@ -90,6 +90,7 @@ module Jekyll
 
       chargers = (st['chargers'] || []).map do |c|
         {
+          'charger_id'   => c['charger_id'],
           'speed'        => c['speed'],
           'capacity'     => c['capacity'],
           'status_text'  => c['status_text'],
@@ -99,6 +100,7 @@ module Jekyll
       available = chargers.count { |c| c['status_class'] == 'avail' }
 
       self.data['layout']       = 'charger'
+      self.data['station_id']   = st['id']
       self.data['station_name'] = st['name']
       self.data['sido']         = st['sido']
       self.data['sido_slug']    = sido_region['slug'] || st['sido']

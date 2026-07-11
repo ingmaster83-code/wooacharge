@@ -37,16 +37,16 @@ layout: default
 
   <!-- 충전기 목록 -->
   <div class="charger-detail-section">
-    <h2>⚡ 충전기 현황 ({{ page.chargers.size }}대)</h2>
-    <div class="charger-unit-list">
+    <h2>⚡ 충전기 현황 ({{ page.chargers.size }}대) <span id="liveBadge" class="live-badge" style="display:none;">🟢 실시간</span></h2>
+    <div class="charger-unit-list" id="chargerUnitList">
       {% for u in page.chargers %}
-      <div class="charger-unit">
+      <div class="charger-unit" data-charger-id="{{ u.charger_id }}">
         <span class="unit-type tag {% if u.speed == '급속' %}tag-fast{% else %}tag-slow{% endif %}">{{ u.speed }} {{ u.capacity }}kW</span>
         <span class="unit-status status-{{ u.status_class }}">{{ u.status_text }}</span>
       </div>
       {% endfor %}
     </div>
-    <p class="charger-updated">마지막 갱신: {{ page.last_updated }}</p>
+    <p class="charger-updated" id="lastUpdated">마지막 갱신: {{ page.last_updated | default: "정보 없음" }}</p>
   </div>
 
   <!-- 지도 -->
@@ -105,3 +105,8 @@ layout: default
   </script>
 
 </div>
+
+<script>
+  const STATION_ID = {{ page.station_id | jsonify }};
+</script>
+<script src="{{ '/assets/js/charger-status.js' | relative_url }}"></script>
