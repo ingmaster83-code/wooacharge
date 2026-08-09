@@ -1,6 +1,18 @@
 require 'json'
 
 module Jekyll
+  # 우아동네(wooatown) 지역 페이지 slug (공식 시도명 → 짧은 한글 시도명)
+  WOOATOWN_SIDO = {
+    '서울특별시' => '서울', '부산광역시' => '부산', '대구광역시' => '대구',
+    '인천광역시' => '인천', '광주광역시' => '광주', '대전광역시' => '대전',
+    '울산광역시' => '울산', '세종특별자치시' => '세종', '경기도' => '경기',
+    '강원특별자치도' => '강원', '강원도' => '강원',
+    '충청북도' => '충북', '충청남도' => '충남',
+    '전북특별자치도' => '전북', '전라북도' => '전북', '전라남도' => '전남',
+    '경상북도' => '경북', '경상남도' => '경남',
+    '제주특별자치도' => '제주', '제주도' => '제주',
+  }.freeze
+
   class ChargerPageGenerator < Generator
     safe true
     priority :normal
@@ -104,6 +116,7 @@ module Jekyll
       self.data['station_name'] = st['name']
       self.data['sido']         = st['sido']
       self.data['sido_slug']    = sido_region['slug'] || st['sido']
+      self.data['wooatown_sido'] = WOOATOWN_SIDO[st['sido']] || st['sido']
       self.data['sigungu']      = st['sigungu']
       self.data['sigungu_slug'] = sg_entry['slug'] || st['sigungu']
       self.data['address']      = st['address']

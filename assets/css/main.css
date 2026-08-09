@@ -166,3 +166,13 @@ a { text-decoration: none; color: inherit; }
 .footer-disclaimer { font-size: .8rem; color: var(--text-light); margin-bottom: 12px; }
 .footer-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; font-size: .85rem; color: var(--text-secondary); margin-bottom: 10px; }
 .footer-copy { font-size: .78rem; color: var(--text-light); }
+
+/* 우아동네 교차링크 */
+.crosslink-box { margin: 16px 0 8px; }
+.crosslink-link {
+  display: block; text-align: center; padding: 12px 16px;
+  border: 1px dashed var(--border); border-radius: var(--radius);
+  color: var(--text-secondary); font-size: .85rem; font-weight: 600;
+  text-decoration: none; transition: all .2s;
+}
+.crosslink-link:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
