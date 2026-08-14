@@ -176,3 +176,8 @@ a { text-decoration: none; color: inherit; }
   text-decoration: none; transition: all .2s;
 }
 .crosslink-link:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
+
+.ad-placeholder {
+  background: #F1F5F9; border: 1px dashed #CBD5E1; border-radius: 6px;
+  color: #94A3B8; font-size: .82rem; padding: 14px; text-align: center;
+}
