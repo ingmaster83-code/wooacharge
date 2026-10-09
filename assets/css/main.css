@@ -181,3 +181,14 @@ a { text-decoration: none; color: inherit; }
   background: #F1F5F9; border: 1px dashed #CBD5E1; border-radius: 6px;
   color: #94A3B8; font-size: .82rem; padding: 14px; text-align: center;
 }
+
+/* ===== Sticky Sidebar Ad ===== */
+.page-with-sidebar { max-width: 1160px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 300px; gap: 24px; align-items: start; }
+.tool-sidebar { position: sticky; top: 76px; }
+.ad-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.08); border: 1.5px dashed #e5e7eb; padding: 14px; display: flex; flex-direction: column; align-items: center; min-height: 280px; margin-bottom: 16px; }
+@media (max-width: 1024px) { .page-with-sidebar { grid-template-columns: 1fr; } .tool-sidebar { display: none; } }
+
+/* 사이드바 래퍼 안의 본문 블록은 열 너비에 맞춘다 */
+.page-with-sidebar > .side-main { min-width: 0; }
+.page-with-sidebar > .side-main > * { max-width: none; margin-left: 0; margin-right: 0; }
+.page-with-sidebar > .side-main > .section { padding-left: 0; padding-right: 0; }
